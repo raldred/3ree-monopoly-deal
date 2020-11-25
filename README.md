@@ -1,43 +1,35 @@
-3REE Monopoly Deal
-===================
+# 3REE Monopoly Deal
 
 [![CircleCI](https://circleci.com/gh/baopham/3ree-monopoly-deal.svg?style=svg)](https://circleci.com/gh/baopham/3ree-monopoly-deal)
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)  
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 A Monopoly Deal game built using the 3REE (React - Redux - Rethinkdb - Express) stack.
 
 > Initial boilerplate was based on: https://github.com/GordyD/3ree
 
+## Requirements
 
-Requirements
-------------
-* Node 6.7 and up
-* npm 3.10 and up or yarn
+- Node 6.7 and up
+- npm 3.10 and up or yarn
 
-
-Quick Start
-----------
+## Quick Start
 
 > Replace `npm` with `yarn` if you are using yarn
 
 1. Install rethinkdb
-1. Run `npm install`
+1. Run `CXXFLAGS="-mmacosx-version-min=10.9" LDFLAGS="-mmacosx-version-min=10.9" npm install`
 1. Run `rethinkdb` in the root directory in a separate tab
 1. Run `npm run db:setup` wait and exit
 1. Run `npm start`
 
-
-Notes
------
+## Notes
 
 - Currently, only the client knows about what cards the player is holding
 - Rules are loosely applied
 - If you get unexpected errors, try to clear local storage: `localStorage.removeItem('redux')`
 - No authentication and such, play responsibly :blush:
 
-
-TODOs
------
+## TODOs
 
 - [x] Improve log - show card images for example
 - [x] Allow to sly deal, force deal, pay "left over cards"
@@ -49,7 +41,7 @@ TODOs
   - [x] say no
 - [x] Fix bug when paying using properties / house / hotel...
 - [x] There should be a place for cards like house and hotel  
-      e.g. payer pays using a property card -> set is no longer a full set -> house and hotel cards should go to a different place
+       e.g. payer pays using a property card -> set is no longer a full set -> house and hotel cards should go to a different place
 - [x] Allow player to indicate if cards should be treated as money
 - [x] Collect all the card images
 - [x] Sound notification for payment notice
@@ -83,7 +75,6 @@ TODOs
 - [x] Improve notification... possibly throttled?
 - [ ] ~~Hydrate store from server~~
 
+## License
 
-License
---------
 MIT
